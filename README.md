@@ -4,6 +4,9 @@
 Матеріали
 
 https://github.com/
+https://tortoisegit.org/download/
+https://git-scm.com/download/win
+http://plugins.netbeans.org/plugin/48315/emmet
 
 Практика
 
@@ -22,7 +25,6 @@ o	Page Ruler, Dimension.
 ●	Виконання Exercise1;
 
 ●	Заливання результату на Github.
-
 
 # 2. HTML
 Теорія
