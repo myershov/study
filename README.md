@@ -1,17 +1,5 @@
 # FED. Програма навчання.
 # 1. GIT, IDE setup
-Теорія
-
-●	Загальна інформація;
-
-●	Netbeans;
-
-●	Встановлення плагінів та розширень для браузера;
-
-o	Emmet;
-
-o	Page Ruler, Dimension.
-
 
 Матеріали
 
@@ -21,7 +9,15 @@ https://github.com/
 
 ●	Реєстрація на Github;
 
-●	Встановленя IDE, tourtoiseGit;
+●	Встановлення IDE, плагінів та розширень для браузера;
+
+o	NetBeans;
+
+o	tourtoiseGit;
+
+o	Emmet;
+
+o	Page Ruler, Dimension.
 
 ●	Виконання Exercise1;
 
