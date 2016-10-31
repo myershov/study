@@ -21,7 +21,11 @@ https://github.com/
 
 ●	Реєстрація на Github;
 
-●	Встановленя IDE.
+●	Встановленя IDE, tourtoiseGit;
+
+●	Виконання Exercise1;
+
+●	Заливання результату на Github.
 
 
 # 2. HTML
