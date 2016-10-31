@@ -48,17 +48,20 @@ o	Атрибути.
 
 
 Матеріали
+
 http://htmlbook.ru/samhtml
+
 https://www.codecademy.com/
+
 http://www.w3schools.com/html/default.asp
 
 Практика
 
-●	Верстка макету http://html-templates.info/images/items/140526093101.jpg;
+●	Виконання Exercise1;
 
-o	Використання тексту-риби, Emmet;
+o	Використання тексту-риби за допомогою Emmet;
 
-●	Заливання дз на гітхаб.
+●	Заливання результату на Github.
 
 
 # 3. СSS
