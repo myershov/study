@@ -7,3 +7,6 @@ and open the template in the editor.
     Created on : 31.10.2016, 16:28:48
     Author     : Админ
 */
+table{
+    border: 1px solid black;
+}
