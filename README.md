@@ -106,4 +106,11 @@ http://www.w3schools.com/css/default.asp
 
 http://www.w3.org/community/webed/wiki/CSS/Training 
 
+Практика
+
+●	Виконання Exercise3;
+
+o	Використання Emmet в HTML, CSS;
+
+●	Заливання результату на Github.
 
