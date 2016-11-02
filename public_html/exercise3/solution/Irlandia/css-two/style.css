@@ -1,0 +1,24 @@
+.hover__place{
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+    border: 1px solid #512;
+    position: relative;
+    transition: all 0.3s linear 0.1s;
+}
+.hover__place span{
+    position: relative;
+    right: -2000px;
+    transition: all 1s linear 0.1s;
+}
+.hover__place:hover{
+    border: 3px solid #512;
+}
+.hover__place:hover span{
+    right: 0;
+    transition: all 1s linear 0.1s;
+}
+body {
+    overflow-x: hidden;
+}

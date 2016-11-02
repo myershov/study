@@ -1,0 +1,22 @@
+.container > div:first-child{
+    width: 20%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.container > div:first-child h3{
+    font-size: 35px;
+    text-align: center;
+}
+.text_effect{
+    position: fixed;
+    width: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    min-height: 300px;
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    pointer-events: none;
+}
