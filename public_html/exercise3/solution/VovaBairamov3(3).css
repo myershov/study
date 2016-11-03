@@ -1,0 +1,15 @@
+body{
+	margin: 50px 0px 0px 400px;
+}
+.test  {
+   
+   background: #bb4e4e;
+   border: 1px solid blue;
+      width: 15%;
+    height: 30px;
+      margin: 20px 0px 0px 0px;
+      transition: all 1s ease-in-out;
+  }
+div:hover  ~ div.move{ width: 700px;}
+
+
