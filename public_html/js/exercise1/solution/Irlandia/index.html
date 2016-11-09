@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="js.js"></script>
+
+    </head>
+    <body>
+        <span>
+            Знайдіть суму 1 + 2 + 3 + ... + n, де число n вводиться користувачем з клавіатури;
+        </span>
+        <hr>
+        <div class="calc">
+            <span>1+2+3+35+<input id="input_form" name="input" type="text"> = <span id="number"> skokoto tam </span></span>
+            <input type="submit" onclick="getValue()" value="Посчтитать">
+        </div>
+        <br>
+        <hr>
+        <span>
+            Написати програму, порахувати кількість парних і непарних чисел в заданому довільному числі.
+        </span>
+        <div class="calc">
+            <input type="text" name="n">
+            <input type="submit" onclick="getValueTwo()" value="Произвольное число">
+        </div>
+        <script type="text/javascript">
+            function getValue() {
+                var text = document.getElementsByTagName("input")[0];
+                var val = text.value;
+                var calk = (1 + 2 + 3 + 35) + Number(val);
+                var numb = document.getElementById("number");
+                numb.innerHTML = calk;
+            }
+        </script>
+        <script>
+            function getValueTwo() {
+                var textTwo = document.getElementsByTagName("n")[0];
+                for (var k = 35; k < 87; k++) {
+                    if (k % 7 === 1 || k % 7 === 2 || k % 7 === 5) {
+                        console.log(k);
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
