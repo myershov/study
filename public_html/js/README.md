@@ -109,4 +109,4 @@ Exercise3
 
 ● У view2 здійснити розв"язок біквадратного рівняння;
 
-● Протестувати тест за допомого е2е тесту. Приклад є тут, уважно прочитайте readme.md.  https://github.com/vipslord/study/tree/master/public_html/js/exercise3/Volodymyr-Bairamov/angular-seed/e2e-tests.
+● Протестувати за допомого е2е тесту. Приклад є тут, уважно прочитайте readme.md.  https://github.com/vipslord/study/tree/master/public_html/js/exercise3/Volodymyr-Bairamov/angular-seed/e2e-tests.
