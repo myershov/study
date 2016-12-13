@@ -1,0 +1,38 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+.div {
+    width:150px;
+    height:50px;
+    clear: both;float:left;
+    border:1px solid black;
+    margin:10px auto;
+   
+}
+/*.div:hover {
+    -moz-transform: rotate(3600deg); 
+    -ms-transform: rotate(3600deg); 
+    -webkit-transform: rotate(3600deg); 
+    -o-transform: rotate(3600deg); 
+    transform: rotate(3600deg);
+*/
+.div1 {
+    width:150px;
+    height:50px;
+    border:1px solid black;
+    clear: both;float:left;
+    margin:10px auto;
+    -webkit-transition: transform 10s linear 0s;
+    -moz-transition: transform 10s linear 0s;     
+    -o-transition: transform 10s linear 0s;
+    transition: transform 10s linear 0s;    
+}
+.div1:hover {
+    -moz-transform: rotate(3600deg); 
+    -ms-transform: rotate(3600deg); 
+    -webkit-transform: rotate(3600deg); 
+    -o-transform: rotate(3600deg); 
+    transform: rotate(3600deg);
+}
