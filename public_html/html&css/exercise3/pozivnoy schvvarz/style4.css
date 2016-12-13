@@ -1,19 +1,27 @@
-body {
-    margin: 0px;
+body{
+	margin: 0px;
 }
-.test {
-    background: white;
-    border: 1px solid red;
-    
-    width: 100px;
-    height: 30px;
-    
-    margin: 20px 0px 0px 0px;
-    
+
+
+
+.test  {
+   
+   background: white;
+   border: 1px solid red;
+   
+   width: 100px;
+   height: 30px;
+   
+   margin: 20px 0px 0px 0px;
+   
+   
     -webkit-transition: all 1s ease-out 0.5s;
     -moz-transition: all 1s ease-out 0.5s;
     -o-transition: all 1s ease-out 0.5s;
     transition: all 1s ease-out;
-    
-}
-div: hover ~ div.go{ width: 500px;}
+ }
+
+div:hover  ~ div.go{ width: 500px;}
+
+
+
