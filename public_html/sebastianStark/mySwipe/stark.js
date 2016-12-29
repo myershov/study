@@ -1,44 +1,55 @@
-var clickCounter = 0;
-
 function ontouch() {
-     document.body.addEventListener('mousedown', function (e) {
-         window.mouseisdown = true
-         window.startX = e.pageX
-     })
+  var isGoBackVisble,
+      isMouseDown,
+      myTimeout,
+      startX
 
-     document.body.addEventListener('mousemove', function (e) {
-         clickCounter++
-         console.log(clickCounter)
-         console.log(e)
-         if (window.mouseisdown) {
-             distX = e.pageX - window.startX
-        
-             if (distX < -100) {
-                 window.isGoBackVisble = true;
-             }
-         }
-     })
+  var goBackButton = document.querySelector('.back-button')
 
-    $( "body" ).on( "mouseup", function(e) {
-        window.mouseisdown = false
-        if (window.isGoBackVisble) {
-            window.isGoBackVisble = false;
-            $('.back-button').css({"display":"block", 'top': e.clientY, 'left': e.clientX});
-            $('.back-button').on('mouseout', function(e){
-             var myTimeout = setTimeout(function() {
-                 $('.back-button').css({"display":"none"})
-                 $('.back-button').on('mouseover',function() {
-                     clearTimeout(myTimeout);
-                 }) 
-             }, 1000)
-            })
-            $(".back-button").click(function(){
-            history.back(-1)
-            });
+  var getVisibleButtonStyle = function(top, left) {
+    return  'visibility: visible;top:' + top + 'px;left:'+ left +'px;'
+  }
 
+  var getHiddenButtonStyle = function() {
+    return 'visiblity: hidden'
+  }
+   
+  document.body.addEventListener('mousedown', function (e) {
+    isMouseDown = true
+    startX = e.pageX
+  })
+
+  document.body.addEventListener('mousemove', function (e) {
+    var distX
+    
+    if (isMouseDown) {
+      distX = e.pageX - startX
+
+      if (distX < -100) {
+        isGoBackVisble = true
+      }
+    }
+  })
+
+
+  document.body.addEventListener('mouseup', function(e) {
+    isMouseDown = false
+    if (isGoBackVisble) {
+      isGoBackVisble = false
+      goBackButton.style.cssText = getVisibleButtonStyle(e.clientY, e.clientX)
+      goBackButton.onmouseleave = function() {
+        myTimeout = setTimeout(function() {
+            goBackButton.style.cssText = getHiddenButtonStyle()
+            goBackButton.onmouseover = function() {
+              clearTimeout(myTimeout)
+            }
+        }, 1000)
+        goBackButton.onclick = function() {
+          window.history.back(-1)
         }
-    })
+      }
+    }
+  })
  }
-
 
 window.addEventListener('load', ontouch)
