@@ -3,7 +3,7 @@ function ontouch() {
       isMouseDown,
       myTimeout,
       startX
-
+      
   var goBackButton = document.querySelector('.back-button')
 
   var getVisibleButtonStyle = function(top, left) {
@@ -17,6 +17,8 @@ function ontouch() {
   document.body.addEventListener('mousedown', function (e) {
     isMouseDown = true
     startX = e.pageX
+    
+    e = e.originalEvent
   })
 
   document.body.addEventListener('mousemove', function (e) {
@@ -29,6 +31,8 @@ function ontouch() {
         isGoBackVisble = true
       }
     }
+    
+    e = e.originalEvent
   })
 
 
@@ -49,6 +53,8 @@ function ontouch() {
         }
       }
     }
+    
+    e = e.originalEvent
   })
  }
 
