@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<form id="form">
+    <input name="input" type="text" />
+    <select name="inunits">
+        <option value="0.0254">дм</option>
+        <option value="0.01">см</option>
+        <option value="1">м</option>
+    </select>
+    <span>Перевести в:</span>
+    <select name="outunits">
+        <option value="39,37">дм</option>
+        <option value="100">см</option>
+        <option value="1">м</option>
+    </select>
+    <input name="output" type="text" readonly="" />
+    <script>
+        with (form) {
+            onchange = oninput = function() {
+                output.value = input.value * inunits.value * outunits.value;
+            };
+        }
+    </script>
+</form>
