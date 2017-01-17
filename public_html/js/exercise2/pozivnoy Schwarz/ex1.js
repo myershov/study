@@ -1,15 +1,20 @@
-
-    var min = prompt('Число?','');
-    var max = prompt('Число?','');
+var min = 2;//prompt('Число?', '');
+var max = 7;//prompt('Число?', '');
     
 function randomInteger(min, max) {
-    var rand = min - 0.5 + Math.random() * (max - min + 1);
-    rand = Math.round(rand);
-    return rand;
-  }
+    var rand;
+    var newArr = [];
+    
+    for (var i = min; i < max; i++) {
+        rand = min - 0.5 + Math.random() * (max - min + 1);
+        rand = Math.round(rand);
+        newArr.push(rand);
+    }
+    
+    return newArr;
+}
 
-    debugger
-    alert(randomInteger(min, max));
+console.log(randomInteger(min, max));
 
 
 

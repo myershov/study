@@ -1,11 +1,21 @@
-var arr1 = [1,2,3,4,5];
-var arr2 = [1,2,3,4,5];
-function mean(arr1, arr2) {
-    if (arr1.length === 0 && arr2.length === 0)
-        return 0;
+var arr1 = [12];
+var arr2 = [22, 1];
+var arr3 = [2];
+var arr4 = [2];
+var arr5 = [12, 24, 34];
+
+function mean() {
     var sum = 0;
-    for (var i in arr1) sum += arr1[i];
-    for (var i in arr2) sum += arr2[i];
-    return sum/(arr1.length + arr2.length);
+    var elementCount = 0;
+    var arr;
+    for (var i = 0, l = arguments.length; i < l; i++) {
+        arr = arguments[i];
+        for (var item in arr) {
+            sum += arr[item];
+        }
+        elementCount += arr.length;
+    }
+
+    return sum / elementCount;
 }
-document.write(mean(arr1, arr2));
+document.write(mean(arr1, arr2, arr3, arr4, arr5));
