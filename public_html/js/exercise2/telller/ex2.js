@@ -1,5 +1,5 @@
 var p=1,k=10;
-var m1 = [], m2 = [], m3 = [], m4 = [], m5 = [], ml=[];
+var m1 = [], m2 = [], m3 = [], m4 = [], m5 = [], ml;
 
 function mas(a,b){
 return Math.floor(Math.random() * (b - a)) + a;
@@ -20,10 +20,5 @@ function sum(a){
         }
     return total / a.length; 
 }
-ml[0] = sum(m1);
-ml[1] = sum(m2);
-ml[2] = sum(m3);
-ml[3] = sum(m4);
-ml[4] = sum(m5);
-
+ml = [sum(m1), sum(m2), sum(m3), sum(m4), sum(m5)];
 document.write(sum(m1));
