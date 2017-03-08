@@ -1,11 +1,7 @@
-<script src= "view1.js" ></script>
-<div>
-<b>Квадратне рівнняння ax&sup2; + bx + c = 0</b>
-<form name="frm" action="javascript:sq()">
-a <input name="a" type="text" value="1" size="1">
-b <input name="b" type="text" value="2" size="1">
-c <input name="c" type="text" value="1" size="1">
-<input type="submit" value="посчитать">
-</form>
-Решение: <span id="sqres">Введите коэффициенты и нажмите "посчитать"</span>
+<h1>Factorial</h1>
+<input type="text" id="txt" ng-model='vc1.value' ng-change="vc1.getResult()" />  
+<br />
+<span id='res1' ng-show='vc1.result'>Result: {{vc1.result}}</span>
+<div ng-repeat="(key, value) in vc1.arr track by $index">
+  <div>{{value}}</div>
 </div>

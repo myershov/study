@@ -1,4 +1,4 @@
-<script src="view2.js" ></script>
+<!--<script src="view2.js" ></script>
 <div>
 <b>Біквадратне рівнняння ax<sup>4</sup> + bx<sup>2</sup> + c = 0</b>
 <form name="frm" action="javascript:sq()">
@@ -8,4 +8,30 @@ c <input name="c" type="text" value="1" size="1">
 <input type="submit" value="посчитать">
 </form>
 Решение: <span id="sqres">Введите коэффициенты и нажмите "посчитать"</span>
-</div>
+</div>-->
+
+    <h1>Square sentence</h1>
+    <input type="text" id="txt" ng-model='vc2.a' ng-change="vc2.getResult()"/> X<sup>2</sup> + 
+    <input type="text" id="txt1" ng-model='vc2.b' ng-change="vc2.getResult()"/> X + 
+    <input type="text" id="txt2" ng-model='vc2.c' ng-change="vc2.getResult()"/> = 0 <br> 
+    
+    <button ng-click="vc2.getResult()" id="button">get result</button>
+    
+    <div ng-show='vc2.x1 || vc2.x2'>
+        <br> Descriminant: <br />
+        {{vc2.a1 + 'x'}} <sup>2</sup> + 
+        {{vc2.b1 + 'x+' + vc2.c1 + '= 0'}}
+        <br /> 
+        Result:
+        <br />
+        <span> D = b2 - 4ac = </span> {{vc2.b1}}<sup>2</sup> 
+        {{'-4*'+ vc2.a1 +'*' + vc2.c1}} = {{vc2.d}}
+        <br /> 
+        X: 
+        <br /> 
+        <br />
+        <span id='res1' ng-show='vc2.x1'>x1: {{vc2.x1}}</span>
+        <br />
+        <span id='res2' ng-show='vc2.x2'>x2: {{vc2.x2}}</span>
+    </div>
+   
