@@ -1,0 +1,77 @@
+body
+{
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	color: #999d9e;
+	background: #fdfcfb;
+	font-style: normal;
+
+}
+header
+{
+	margin: 25px 0 20px;
+
+}
+.menu
+{
+	background: #fefefe;
+}
+.navbar-brand img{
+
+	position: relative;
+	top: -48px;
+}
+.navbar-default .navbar-nav > li > a{
+
+	color: #58584;
+	font-size: 18px;
+}
+ .navbar-nav > li.active-link > a{
+
+	border-bottom: 1px solid #c52222;
+}
+.navbar-nav > li> a:hover{
+
+	border-bottom: 1px solid #c52222;
+	color: #8d6969;
+
+}
+.carousel .slide {
+    color: #FFFFFF;
+    font-size: 20pt;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.content .textbody{
+
+	color: #58584;
+	font-size: 18px;
+	text-align: center;
+
+
+}
+.content{
+
+	margin: 25px 40PX 20px;
+	border: 2px solid #58584;
+
+
+
+}
+
+footer{
+
+margin: 20px 0 20px;
+
+}
+
+.container .myc a{
+	
+	color: #58584;
+	font-size: 18px;	
+	background: #58584;
+	border: 2px solid #58584;
+}
