@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<script type="text/javascript">
+
+	function cliked(form) {
+		// body...
+	
+
+
+		function SMmToMeter(a) {
+
+		
+			return a/100;
+		}
+
+		function SMmToDuim(a) {
+
+		
+			return a/2.54;
+		}
+
+		var sm = Number(form.sm.value);
+
+		document.write(sm + " сантиметрів дорівнює " + SMmToMeter(sm) + " метрів і " + SMmToDuim(sm) + " дюймів. <br>");
+
+		}
+
+	</script>
+</head>
+<body>
+<p>Написати функцію, яка переводить сантиметри в метри та функцію, яка переводить сантиметри в дюйми..</p>
+<p>Реалізація:</p>
+
+
+	
+
+<form action="" method="post" id="form" ">
+	<table>
+		<tr>
+			<td><label for="">Довжину в сантиметрах:</label></td>
+			<td><input type="text" name="sm"></td>
+			<td rowspan="2"><input type="button" name="button" value="Random" onclick="cliked(document.getElementById('form'))"></td>
+		</tr>
+
+	</table>
+
+	</form>
+	
+</body>
+</html>
