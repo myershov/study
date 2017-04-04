@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<script type="text/javascript">
+
+	function cliked(form) {
+		// body...
+	
+
+
+		function per(a) {
+
+		
+			return a*4;
+		}
+
+		var st = Number(form.storona.value);
+
+		document.write("Перриметр квадрата зі стороною " + st + ": " + per(st) + "<br>");
+
+		}
+
+	</script>
+</head>
+<body>
+<p>Написати функцію, яка виводить периметр квадрата. Вхідний параметр - одна сторона.</p>
+<p>Реалізація:</p>
+
+
+	
+
+<form action="" method="post" id="form" ">
+	<table>
+		<tr>
+			<td><label for="">Ведіть строну квадрата:</label></td>
+			<td><input type="text" name="storona"></td>
+			<td rowspan="2"><input type="button" name="button" value="Random" onclick="cliked(document.getElementById('form'))"></td>
+		</tr>
+
+	</table>
+
+	</form>
+	
+</body>
+</html>
