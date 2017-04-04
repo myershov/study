@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script type="text/javascript">
+
+		function buttonclic(form) {
+			var rezult = 6 + Number(form.text.value);
+			alert("1+2+3+" + Number(form.text.value) + " = " + rezult);
+		}
+
+
+	</script>
+</head>
+<body>
+<p>Знайдіть суму 1 + 2 + 3 + ... + n, де число n вводиться користувачем з клавіатури.</p>
+<p>Реалізація:</p>
+
+<form action="" method="post" onsubmit="buttonclic(this)">
+	<table>
+		<tr>
+			<td><label for="name">1+2+3+</label></td>
+			<td><input type="text" name="text"></td>
+			<td><input type="submit" name="submit" value="Розрахувати"></td>
+			<td><span></span></td>
+		</tr>
+		
+	
+	</table>
+
+	</form>
+	
+</body>
+</html>
