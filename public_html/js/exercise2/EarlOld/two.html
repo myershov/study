@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+</head>
+<body>
+<p>Написати функцію, яка заповнює масив випадковими числами в діапазоні, зазначеному користувачем. Функція повинна приймати два аргументи - початок діапазону і його кінець</p>
+<p>Реалізація:</p>
+
+
+	<script type="text/javascript">
+
+
+		function sered(a) {
+
+			var sum = 0;
+
+			for (var i = 0; i < a.length; i++) {
+				sum += a[i];
+			}
+
+			return sum/a.length;
+		}
+
+
+		var arr1 = new Array(10,12,15,14)
+
+		var arr2 = new Array(1,2,3,4)
+
+		var arr3 = new Array(1,12,14)
+
+		var arr4 = new Array(0,8,9)
+
+		var arr5 = new Array(1,1,1,1,1,1,1)
+
+		document.write("Перший масив: " + arr1 + "<br>");
+		document.write("Другий масив: " + arr2 + "<br>");
+		document.write("Третій масив: " + arr3 + "<br>");
+		document.write("Четвертий масив: " + arr4 + "<br>");
+		document.write("П'ятий масив: " + arr5 + "<br><br>");
+
+		document.write("Середнє арифметичне першого масиву: " + sered(arr1) + "<br>");
+		document.write("Середнє арифметичне першого масиву: " + sered(arr2) + "<br>");
+		document.write("Середнє арифметичне першого масиву: " + sered(arr3) + "<br>");
+		document.write("Середнє арифметичне першого масиву: " + sered(arr4) + "<br>");
+		document.write("Середнє арифметичне першого масиву: " + sered(arr5) + "<br><br>");
+
+		var sum = (sered(arr1) + sered(arr2) + sered(arr3) + sered(arr4) + sered(arr5))/5;
+
+		document.write("Середнє арифметичне всіх п'яти масивів: " + sum + "<br>");
+
+
+
+	</script>
+
+	
+</body>
+</html>
