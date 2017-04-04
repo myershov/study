@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script type="text/javascript">
+
+		function print(a) {
+
+			document.write(""+a+" <br>");
+		}
+
+		function rand(min, max) {
+
+			var a = new Array();
+			
+			for (var i = 0; i < 10; i++) {
+				a[i] = Math.floor(Math.random() * (max - min)) + min;
+				print(a[i]);
+			}
+
+		}
+
+		function myrandom(form) {
+
+			var min = Number(form.min.value), max = Number(form.max.value);
+			rand(min , max);			
+		}
+
+
+	</script>
+</head>
+<body>
+<p>Написати функцію, яка заповнює масив випадковими числами в діапазоні, зазначеному користувачем. Функція повинна приймати два аргументи - початок діапазону і його кінець</p>
+<p>Реалізація:</p>
+
+<form action="" method="post" id="form" ">
+	<table>
+		<tr>
+			<td><label for="">MIN:</label></td>
+			<td><input type="text" name="min"></td>
+			<td rowspan="2"><input type="button" name="button" value="Random" onclick="myrandom(document.getElementById('form'))"></td>
+		</tr>
+
+		<tr>
+			<td><label for="">MAX:</label></td>
+			<td><input type="text" name="max"></td>
+			<td><span id="rezult"></span></td>	
+		</tr>
+
+		
+	
+	</table>
+
+	</form>
+	
+</body>
+</html>
