@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="helloWorldApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello world</title>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+	<script>
+
+	var helloWorldApp = angular.module("helloWorldApp", []);
+
+	helloWorldApp.controller("helloWorldCtrl", function ($scope) {
+		$scope.visible = false;
+
+		$scope.clickHandler = function() {
+
+			var a = $scope.a, 
+				b = $scope.b,
+				c = $scope.c,
+				D = (b * b) - (4 * a * c),
+				x1 = 0, 
+				x2 = 0;
+
+				if (D > 0) {
+
+					x1 = Math.sqrt((-b + Math.sqrt(D)) / (2 * a));
+					x2 = Math.sqrt((-b - Math.sqrt(D)) / (2 * a));
+
+					
+					$scope.x1 = isNaN(x1) ?  "корінь не дійсне число": x1.toFixed(4);
+            		$scope.x2 = isNaN(x2) ?  "корінь не дійсне число": x2.toFixed(4);
+				 }
+
+				 else if (D === 0) {
+            			x1 = x2 = Math.sqrt(-b / (2 * a));
+
+            			$scope.x1 = isNaN(x1) ?  "корінь не дійсне число": x1.toFixed(4);
+            			$scope.x2 = isNaN(x2) ?  "корінь не дійсне число": x2.toFixed(4);
+            			
+        		} else {
+            		$scope.x1 = $scope.x2 = 'немає дійсних розвязків';
+            	}
+            	$scope.visible = true;
+            	$scope.a = $scope.b = $scope.c = "";
+
+		}
+	});
+	</script>
+
+</head>
+
+<body ng-controller="helloWorldCtrl">
+
+	<table>
+		
+		<tr>
+			<td><input ng-model = "a"></td>
+			<td> Х<sup>4</sup> + </td>
+			<td><input ng-model = "b"></td>
+			<td>X <sup>2</sup> +</td>
+			<td><input ng-model = "c"></td>
+			<td> =0</td>
+			<td><button ng-click="clickHandler()">Розрахувати</button></td>
+		</tr>
+	</table>
+
+	<div ng-show="visible" >Перший розв'язок рівняння: {{x1}}</div>
+	<div ng-show="visible" >Другий розв'язок рівняння: {{x2}}</div>
+
+</body>
+</html>
