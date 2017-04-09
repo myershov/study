@@ -1,0 +1,20 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@2.15.1
+3 info using node@v0.10.48
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies loading dependencies from /home/arrow/Документи/work/study/package.json
+6 error install Couldn't read dependencies
+7 verbose stack Error: ENOENT, open '/home/arrow/Документи/work/study/package.json'
+8 verbose cwd /home/arrow/Документи/work/study
+9 error Linux 3.19.0-32-generic
+10 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+11 error node v0.10.48
+12 error npm  v2.15.1
+13 error path /home/arrow/Документи/work/study/package.json
+14 error code ENOPACKAGEJSON
+15 error errno 34
+16 error package.json ENOENT, open '/home/arrow/Документи/work/study/package.json'
+16 error package.json This is most likely not a problem with npm itself.
+16 error package.json npm can't find a package.json file in your current directory.
+17 verbose exit [ 34, true ]
