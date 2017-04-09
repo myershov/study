@@ -1,0 +1,45 @@
+.myblock {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.myblock img {
+    width: 100%;
+}
+
+.media-body {
+    padding-top: 30px;
+}
+
+.media-body h4 {
+    padding-bottom: 20px;
+}
+
+.textbody {
+    color: #337ab7;
+    font-size: 20px;
+    text-align: center;
+}
+
+body{background: #efefef;}
+
+#logo a {
+    text-decoration: none;
+}
+
+#logo {
+    display: inline-block;
+    width: 50%;
+}
+
+#features {
+    padding: 10px 20px;
+}
