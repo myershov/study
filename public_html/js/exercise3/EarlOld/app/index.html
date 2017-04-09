@@ -1,43 +1,78 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<html ng-app="helloWorldApp">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+	<meta charset="UTF-8">
+	<title>My AngularJS App</title>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+
+	<script>
+
+	var helloWorldApp = angular.module("helloWorldApp", []);
+
+	helloWorldApp.controller("helloWorldCtrl", function ($scope) {
+		$scope.visible = false;
+
+		$scope.clickHandler = function() {
+
+			var a = $scope.a, 
+				b = $scope.b,
+				c = $scope.c,
+				D = (b * b) - (4 * a * c),
+				x1 = 0, 
+				x2 = 0;
+
+				if (D > 0) {
+
+					x1 = Math.sqrt((-b + Math.sqrt(D)) / (2 * a));
+					x2 = Math.sqrt((-b - Math.sqrt(D)) / (2 * a));
+
+					
+					$scope.x1 = isNaN(x1) ?  "корінь не дійсне число": x1.toFixed(4);
+            		$scope.x2 = isNaN(x2) ?  "корінь не дійсне число": x2.toFixed(4);
+				 }
+
+				 else if (D === 0) {
+            			x1 = x2 = Math.sqrt(-b / (2 * a));
+
+            			$scope.x1 = isNaN(x1) ?  "корінь не дійсне число": x1.toFixed(4);
+            			$scope.x2 = isNaN(x2) ?  "корінь не дійсне число": x2.toFixed(4);
+            			
+        		} else {
+            		$scope.x1 = $scope.x2 = 'немає дійсних розвязків';
+            	}
+            	$scope.visible = true;
+            	$scope.a = $scope.b = $scope.c = "";
+
+		}
+	});
+	</script>
+
 </head>
-<body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<body ng-controller="helloWorldCtrl">
 
-  <div ng-view></div>
+	<table>
+		
+		<tr>
+			<td><input id="a" ng-model = "a"></td>
+			<td> Х<sup>4</sup> + </td>
+			<td><input id="b" ng-model = "b"></td>
+			<td>X <sup>2</sup> +</td>
+			<td><input id="c" ng-model = "c"></td>
+			<td> =0</td>
+			<td><button id="button" ng-click="clickHandler()">Розрахувати</button></td>
+		</tr>
+	</table>
 
-  <div>Angular seed app: v<span app-version></span></div>
+	<div ng-show="visible" >Перший розв'язок рівняння:
+		<div id="rez1">{{x1}}</div>
+	</div>
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
-  <script src="components/version/version.js"></script>
-  <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+	<div ng-show="visible" >Другий розв'язок рівняння:
+		<div id="rez2">{{x2}}</div>
+	</div>
+
 </body>
 </html>
