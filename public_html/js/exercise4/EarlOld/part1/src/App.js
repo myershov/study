@@ -60,12 +60,7 @@ class App extends Component {
 
       }
 
-
-      console.log(x1);  
-      console.log(x2); 
-
-    
-      return [x1, x2];
+    return [x1, x2];
 
     } 
 
@@ -76,18 +71,20 @@ class App extends Component {
        
   }
 
-    handleAChange(event){
+  handleAChange(event){
 
-      this.setState({a: event.target.value});
-    }
-    handleBChange(event){
+    this.setState({a: event.target.value});
+  }
 
-      this.setState({b: event.target.value});
-    }
-    handleCChange(event){
+  handleBChange(event){
 
-      this.setState({c: event.target.value});
-    }
+    this.setState({b: event.target.value});
+  }
+
+  handleCChange(event){
+
+    this.setState({c: event.target.value});
+  }
 
   render() {
     return (
@@ -107,8 +104,10 @@ class App extends Component {
             </tbody>
           </table>
         </form>
+
         <div>Перший корінь: {this.state.x1}</div>
         <div>Другий корінь: {this.state.x2}</div>
+        
       </div>
     );
   }
