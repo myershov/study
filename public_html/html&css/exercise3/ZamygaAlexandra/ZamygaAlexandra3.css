@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.blocks {
+    display: block;
+}
+
+.block{
+    border: 1px solid red;
+    width: 100px;
+    height: 30px;
+    margin: 20px 0px 0px 0px;
+}
+
+.block:hover~ .block.expanded {
+    width: 400px;
+    transition: all 1s linear;
+}
