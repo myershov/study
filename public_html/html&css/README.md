@@ -9,7 +9,6 @@ https://tortoisegit.org/download/
 
 https://git-scm.com/download/win
 
-http://plugins.netbeans.org/plugin/48315/emmet
 
 Практика
 
@@ -17,11 +16,9 @@ http://plugins.netbeans.org/plugin/48315/emmet
 
 ●	Встановлення IDE, плагінів та розширень для браузера;
 
-o	NetBeans;
+o	Atom;
 
 o	tourtoiseGit;
-
-o	Emmet;
 
 o	Page Ruler, Dimension.
 
@@ -31,7 +28,9 @@ o	Page Ruler, Dimension.
 
 Поради
 
-Перевірка знань буде йти через Github. Для встановлення розробницького середовища оберіть HTML5/JavaScript версію. Після завантаження плагіну Emmet для середовища розробки установіть його. Для цього зайдить в розділ плагіни, що знаходиться на верхній панели в tools.
+Перевірка знань буде йти через Github. 
+Встановіть розробницьке середовище Атом.
+Зклонуйте проект. Git clone.
 Після кожного виконання вправи заливайте вправу у віповідний розділ на сайті. Для цього за допомогою tourtoiseGit виконуйте наступні команди: git pull - для отримання свіжої версії сайту. Потім git commit - для реєстрування своїх змін в системі. git push - для запису їх в систему.
 
 Exercise1
