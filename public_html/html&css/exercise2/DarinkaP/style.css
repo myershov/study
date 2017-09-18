@@ -1,0 +1,121 @@
+.header-content {
+    height: 80px;
+    background-image: url("grey-subtle-pattern.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+}
+
+.header-content-title {
+    width: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    font-family: serif;
+    color: dimgrey;
+}
+
+.header-content-menu {
+    width: 360px;
+    text-align: right
+}
+
+.section {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: serif;
+    font-style: normal;
+    color: dimgrey;
+    margin-top: 12px;
+}
+
+body {
+    margin: 0;
+    background: whitesmoke;
+}
+
+.slider-wrapper {
+    padding: 50px 7% 60px;
+}
+
+.slider-wrapper .slide {
+    height: 400px;
+    width: 100%;
+    background-color: #c8b6e0;
+}
+
+.slider-wrapper .slider-dots {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 20px;
+    font-style: normal;
+    font-family: serif;
+    color: dimgrey;
+    text-align: center;
+    line-height: 25px;
+    padding: 0px 7% 60px;
+}
+
+.container-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 7% 150px;
+}
+
+.container-news .item-news .text {
+    font-weight: normal;
+    font-style: normal;
+    font-family: serif;
+    color: dimgrey;
+}
+
+.container-news .item-news .rectangle {
+    display: block;
+    height: 160px;
+    width: 100%;
+    background-color: #b3c2df;
+    min-width: 270px;
+}
+
+.container-news .item-content .title {
+    font-weight: bold;
+    font-style: normal;
+    font-family: serif;
+    color: dimgrey;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("grey-subtle-pattern.jpg");
+    padding: 20px 7%;
+}
+
+.footer .social-media .social-media-item {
+    width: 20px;
+    height: 20px;
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.footer .social-media {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.footer .social-media .social-media-item:first-child {
+    margin-left: 0px;
+}
