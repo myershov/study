@@ -1,0 +1,125 @@
+.parent{
+  width: 950px;
+  margin: 0 auto;
+}
+#child{
+  margin-top: 300px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+
+}
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 75px;
+  margin: 15px;
+  color: #fff;
+}
+header{
+    background: url(bg.jpg) no-repeat center top / cover;
+      height: 100vh;
+}
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+div{
+    box-sizing: border-box;
+}
+.logo{
+  margin-top: 50px;
+  float: left;
+}
+nav{
+  float: right;
+  margin-top: 50px;
+}
+.ul{
+  padding: 0;
+  margin: 0;
+}
+.ul li{
+  float: left;
+  display: block;
+  margin-right: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.button{
+  background: #fed136;
+  color: #484543;
+  border-radius: 3px;
+  display: block;
+  width: 240px;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+#services{
+  padding-bottom: 150px;
+}
+#portfolio{
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+.services{
+  margin-top: 50px;
+  text-align: center;
+}
+.services_kybik{
+  width: 270px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+.services_kybik2{
+  width: 270px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.services_kybik p{
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.55em;
+}
+.services_kybik2 p{
+  font-size: 14px;
+  color: #777777;
+  line-height: 1.55em;
+}
+.child{
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 150px;
+}
+h2{
+  margin: 0;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+}
+h3{
+  margin: 0;
+  padding-top: 15px;
+}
