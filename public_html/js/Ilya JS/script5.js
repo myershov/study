@@ -1,4 +1,4 @@
-const users = [
+/*const users = [
   {name: 'Petro'},
   
   {name: 'Pavlo'},
@@ -11,4 +11,4 @@ const result = users.filter(function(item) {
   console.log(item.name.toLowerCase() === nameUser);
   return ~item.name.toLowerCase().indexOf(nameUser);  
 })
-console.log(result);
+console.log(result);*/
