@@ -1,0 +1,163 @@
+body{
+	font-family: 'Bitter', serif;
+	background-color: rgb(240, 240, 240);
+	color:rgb(50,50,50);
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.header{
+	background-image: url(img/bg.jpg);
+	margin-bottom: 50px;
+}
+.container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.logo{
+	text-align: center;
+	float: left;
+	font-size: 40px;
+}
+li{
+	display: inline-block;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	margin-left: 20px;
+	color: black;
+}
+a:hover{
+	color: blue;
+}
+.navigation{
+	margin-top: 50px;
+	list-style-type: none;
+	float: right;
+	max-width: 600px;
+}
+main{
+	padding-bottom: 250px;
+}
+.main-header{
+	margin-bottom: 200px;
+}
+.slider{
+	position: relative;
+	width: 900px;
+	height: 365px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.slider input[type=radio]{
+	position: absolute;
+	opacity: 0;
+}
+.slider-controls{
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	width: 80px;
+	height: 16px;
+	margin-left: -40px;
+	text-align: center;
+	border: 1px green;
+}
+.slider-controls label{
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+	background: white;
+	border: 3px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"] {
+	background: #c1c1c1;
+}
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(255,255,0,0.1);
+}
+.slide:nth-child(1){
+	background-image: url(img/slide1.png);
+	background-repeat: no-repeat;
+}
+.slide:nth-child(2){
+	background-image: url(img/slide2.png);
+	background-repeat: no-repeat;
+}
+.slide:nth-child(3){
+	background-image: url(img/slide3.png);
+	background-repeat: no-repeat;
+}
+.slide:nth-child(4){
+	background-image: url(img/slide4.png);
+	background-repeat: no-repeat;
+}
+.slide{
+	display: none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1){
+	display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2){
+	display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3){
+	display: block;
+}
+#btn-4:checked ~ .slides .slide:nth-child(4){
+	display: block;
+}
+.info{
+	margin-bottom: 50px;
+	font-size: 22px;
+	text-align: center;
+}
+.image{
+	float: left;
+	width: 235px;
+	margin-right: 20px;
+}
+.image:last-child{
+	float: right;
+	margin-right: 0;
+}
+.image h5{
+	font-size: 15px;
+}
+.image p{
+	font-size: 15px;
+}
+img{
+	width: 235px;
+	margin: 0 auto;
+}
+.main-footer{
+	margin-top: 800px;
+}
+footer{
+	background-image: url(img/bg.jpg);
+}
+.copyright{
+	float: left;
+	width: 300px;
+}
+.social{
+	float: right;
+	width: 300px;
+}
