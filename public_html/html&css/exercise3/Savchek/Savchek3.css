@@ -1,0 +1,13 @@
+body{
+	margin: 0 0;
+}
+div{
+	width: 100px;
+	height: 30px;
+	border: 1px solid red;
+	margin-top: 20px;
+	transition: width 1s ease-out;
+}
+.to:hover ~ .go{
+	width: 500px;
+}
